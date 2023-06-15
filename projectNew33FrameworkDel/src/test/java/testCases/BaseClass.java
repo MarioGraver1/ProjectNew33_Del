@@ -11,8 +11,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class BaseClass {
 
     public String baseURL = "https://demo.guru99.com/v4/";
-    public String userName = "mngr503626";
-        public String password = "eqatamA";
+    public String userName = "mngr507629";
+        public String password = "Usagupy";
     public static WebDriver driver;
     public static WebDriverWait wait;
     

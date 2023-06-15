@@ -2,19 +2,20 @@ package testCases;
 
 import org.junit.Test;
 import pageObjects.LoginPage;
+import pageObjects.LoginPageSteps;
+import utilities.CommonTask;
 
-public class TCs003 extends BaseClass{
+public class TCs003 extends BaseClass {
 
-      @Test
-              public void bankPage(){
+    @Test
+    public void bankPage() {
 
-    driver.get(baseURL);
-    LoginPage lp = new LoginPage(driver);
+        LoginPage lp = new LoginPage(driver);
+        CommonTask ct = new CommonTask();
+        LoginPageSteps lsp = new LoginPageSteps();
 
-        lp.setTxtUserName(userName);
-        lp.setTxtPassword(password);
-        lp.clickSubmit();
+        ct.lounchApplication(baseURL);
+        lsp.loginWithValidAccess(userName,password);
         lp.clickLinkNewAccount();
-
-      }
+    }
 }
