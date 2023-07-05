@@ -12,7 +12,6 @@ public class TCs001 extends BaseClass{
         LoginPage lp = new LoginPage(driver);
         CommonTask ct = new CommonTask();
 
-
         ct.lounchApplication(baseURL);
 
         lp.demoSiteIspresent();

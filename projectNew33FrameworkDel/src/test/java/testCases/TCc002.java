@@ -22,7 +22,10 @@ public class TCc002 extends BaseClass {
         ct.lounchApplication(baseURL);
         lsp.loginWithValidAccess(userName,password);
 
+
        Assert.assertEquals("Title doesn’t match with expected","Guru99 Bank Manager HomePage",driver.getTitle());
 
     }
+
+
 }
